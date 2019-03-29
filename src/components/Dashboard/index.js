@@ -5,17 +5,21 @@ import MenuRight from '../Menu/MenuRight'
 import Content from '../Content'
 
 export default class Dashboard extends Component {
+  handleOnClick = option => {
+    console.log('click', option)
+  }
+
   render() {
     return (
       <Grid container className="root" spacing={16}>
         <Grid item xs={2}>
-          <MenuLeft />
+          <MenuLeft onClick={this.handleOnClick}/>
         </Grid>
         <Grid item xs={8}>
           <Content />
         </Grid>
         <Grid item xs={2}>
-          <MenuRight />
+          <MenuRight onClick={this.handleOnClick} />
         </Grid>
       </Grid>
     )
