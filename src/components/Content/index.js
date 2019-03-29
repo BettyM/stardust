@@ -5,9 +5,9 @@ import PhotoCapture from '../PhotoCapture'
 
 export default class Content extends Component {
   render() {
+        //<PhotoCapture />
     return (
       <div>
-        <PhotoCapture />
         <iframe src="https://f1-start.glitch.me/" height="800" width="1000" title="game" />
       </div>
     )

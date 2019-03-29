@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid'
-import Menu from '../Menu'
+import MenuLeft from '../Menu/MenuLeft'
+import MenuRight from '../Menu/MenuRight'
 import Content from '../Content'
 
 export default class Dashboard extends Component {
@@ -8,10 +9,13 @@ export default class Dashboard extends Component {
     return (
       <Grid container className="root" spacing={16}>
         <Grid item xs={2}>
-          <Menu />
+          <MenuLeft />
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={8}>
           <Content />
+        </Grid>
+        <Grid item xs={2}>
+          <MenuRight />
         </Grid>
       </Grid>
     )

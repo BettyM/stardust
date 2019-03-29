@@ -3,28 +3,28 @@ import ButtonBase from '@material-ui/core/ButtonBase'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 
-const images = [
+const options = [
   {
     id: 0,
     url: '/static/images/image1.jpg',
-    title: "Play",
+    title: "Innovacion en Ingenieria",
     width: '40%',
   },
   {
     id: 1,
     url: '/static/images/image1.jpg',
-    title: 'Burgers',
+    title: 'Juego de Reaccion',
     width: '30%',
   },
   {
     id: 2,
     url: '/static/images/image1.jpg',
-    title: 'Camera',
+    title: 'Visitantes',
     width: '30%',
   },
 ]
 
-export default class Menu extends Component {
+export default class MenuRight extends Component {
   handleOnClick = e => {
     console.log('event', e.target.id)
     if(e.target.id === '0') {
@@ -37,7 +37,7 @@ export default class Menu extends Component {
   render() {
     return (
       <div>
-      {images.map(image => (
+      {options.map(image => (
       <Grid item xs={2} className="menu-item" key={image.title}>
                <ButtonBase
                  focusRipple
