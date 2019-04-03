@@ -23,6 +23,12 @@ const options = [
     title: 'Visitantes',
     width: '30%',
   },
+  {
+    id: 'extras',
+    url: '/static/images/image1.jpg',
+    title: 'Extras',
+    width: '30%',
+  },
 ]
 
 const MenuRight = ({ onClick }) => {

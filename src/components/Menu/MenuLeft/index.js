@@ -17,6 +17,24 @@ const options = [
     title: 'Historia del Proyecto Mercurio',
     width: '30%',
   },
+  {
+    id: 'marketing',
+    url: '/static/images/image1.jpg',
+    title: 'Marketing',
+    width: '30%',
+  },
+  {
+    id: 'colaboradores',
+    url: '/static/images/image1.jpg',
+    title: 'Colaboradores',
+    width: '30%',
+  },
+  {
+    id: 'redes',
+    url: '/static/images/image1.jpg',
+    title: 'Redes Sociales',
+    width: '30%',
+  },
 ]
 
 const MenuLeft = ({ onClick }) => {
