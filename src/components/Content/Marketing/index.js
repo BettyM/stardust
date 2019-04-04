@@ -140,7 +140,7 @@ export default class Marketing extends Component {
                     <video
                       className="content-video"
                       controls
-                      autoplay="true"
+                      autoPlay={true}
                     >
                       <source
                         type="video/mp4"
@@ -233,8 +233,8 @@ export default class Marketing extends Component {
                     {tile.title === "Video" &&
                     <video
                       className="content-video-rotate"
-                      autoplay="true"
-                      loop="true"
+                      autoPlay={true}
+                      loop={true}
                     >
                       <source
                         type="video/mp4"
