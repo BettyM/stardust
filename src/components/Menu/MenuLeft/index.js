@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ButtonBase from '@material-ui/core/ButtonBase'
 import Grid from '@material-ui/core/Grid'
@@ -37,7 +37,11 @@ const options = [
   },
 ]
 
-const MenuLeft = ({ onClick }) => {
+export default class MenuLeft extends Component {
+
+  render() {
+    const { onClick } = this.props
+            //<img src={image.url} />
   return (
     <div>
       {options.map(image => (
@@ -54,10 +58,8 @@ const MenuLeft = ({ onClick }) => {
           >
             <span
               className="image-src"
-              style={{
-                backgroundImage: `url(${image.url})`,
-              }}
-            />
+            >
+            </span>
             <span className="image-backdrop" />
             <span className="image-button">
               <Typography
@@ -76,10 +78,9 @@ const MenuLeft = ({ onClick }) => {
       ))}
     </div>
   )
+  }
 }
 
 MenuLeft.propTypes = {
   onClick: PropTypes.func,
 }
-
-export default MenuLeft
