@@ -24,7 +24,7 @@ export default class Dashboard extends Component {
         <Grid item xs={2}>
           <MenuLeft onClick={this.handleOnClick}/>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={8} className="content-root">
           <Content display={content} />
         </Grid>
         <Grid item xs={2}>

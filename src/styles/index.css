@@ -164,3 +164,7 @@ code {
 .tooltip {
   font-size: 14px;
 }
+
+.content-root {
+  padding: 30px !important;
+}
