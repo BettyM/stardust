@@ -160,3 +160,7 @@ code {
 .icon {
   font-size: 25px;
 }
+
+.tooltip {
+  font-size: 14px;
+}

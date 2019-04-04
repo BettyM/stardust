@@ -4,6 +4,11 @@ import MuiExpansionPanel from '@material-ui/core/ExpansionPanel'
 import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary'
 import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails'
 import Typography from '@material-ui/core/Typography'
+import Grid from '@material-ui/core/Grid'
+import GridList from '@material-ui/core/GridList'
+import GridListTile from '@material-ui/core/GridListTile'
+import Tooltip from '@material-ui/core/Tooltip'
+import asesores from './asesores'
 
 const ExpansionPanel = withStyles({
   root: {
@@ -76,11 +81,27 @@ export default class Colaboradores extends Component {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus
-              ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          <Grid item xs={12}>
+            <div className="grid-root">
+              <GridList cellHeight={160} className="grid-list" cols={2}>
+                {asesores.map(tile => (
+                  <GridListTile
+                    key={tile.img}
+                    cols={tile.cols || 1}
+                    className="grid-tile"
+                  >
+                    <Tooltip className="tooltip" title={tile.tooltip}>
+                    <img
+                      src={tile.img}
+                      alt={tile.title}
+                      className="content-image"
+                    />
+                    </Tooltip>
+                  </GridListTile>
+                ))}
+              </GridList>
+            </div>
+          </Grid>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     )
@@ -113,7 +134,6 @@ export default class Colaboradores extends Component {
   render() {
     return (
       <div>
-        <h1>Colaboradores...</h1>
         {this.option1()}
         {this.option2()}
       </div>
