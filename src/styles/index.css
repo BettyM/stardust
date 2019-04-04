@@ -136,6 +136,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
   height: auto !important;
 }
 
+.content-video-rotate {
+  transform: rotate(270deg);
+  width: 100%;
+  height: auto !important;
+}
+
 .grid-root {
   display: flex;
   flex-wrap: wrap;

@@ -10,7 +10,7 @@ import GridListTile from '@material-ui/core/GridListTile'
 import option1Data from './option1Data'
 import option2Data from './option2Data'
 import option3Data from './option3Data'
-import Video1 from '../../../static/videos/CUENTO_MERCURY_RACE.mp4'
+import option4Data from './option4Data'
 
 const ExpansionPanel = withStyles({
   root: {
@@ -129,11 +129,23 @@ export default class Marketing extends Component {
                     cols={tile.cols || 1}
                     className="grid-tile"
                   >
+                    {tile.title === "Image" &&
                     <img
                       src={tile.img}
                       alt={tile.title}
                       className="content-image"
-                    />
+                    />}
+                    {tile.title === "Video" &&
+                    <video
+                      className="content-video"
+                      controls
+                      autoplay="true"
+                    >
+                      <source
+                        type="video/mp4"
+                        src={tile.img}
+                      />
+                    </video>}
                   </GridListTile>
                 ))}
                 <GridListTile
@@ -141,16 +153,6 @@ export default class Marketing extends Component {
                   cols={2}
                   className="grid-tile"
                 >
-                  <video
-                    className="content-video"
-                    controls
-                    autoplay="true"
-                  >
-                    <source
-                      type="video/mp4"
-                      src={Video1}
-                    />
-                  </video>
                 </GridListTile>
               </GridList>
             </div>
@@ -212,11 +214,38 @@ export default class Marketing extends Component {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus
-              ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          <Grid item xs={12}>
+            <div className="grid-root">
+              <GridList cellHeight={160} className="grid-list" cols={2}>
+                {option4Data.map(tile => (
+                  <GridListTile
+                    key={tile.img}
+                    cols={tile.cols || 1}
+                    className="grid-tile"
+                  >
+                    {tile.title === "Image" &&
+                    <img
+                      src={tile.img}
+                      alt={tile.title}
+                      className="content-image"
+                    />}
+                    {tile.title === "Video" &&
+                    <video
+                      className="content-video-rotate"
+                      controls
+                      autoplay="true"
+                      loop="true"
+                    >
+                      <source
+                        type="video/mp4"
+                        src={tile.img}
+                      />
+                    </video>}
+                  </GridListTile>
+                ))}
+              </GridList>
+            </div>
+          </Grid>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     )
