@@ -14,13 +14,13 @@ const asesores = [
     img: Logo2,
     title: 'Image',
     author: 'author',
-    tooltip: 'Universidad Tecnológica de Hermosillo',
+    tooltip: 'Universidad Tecnológica de Hermosillo / Ingeniería en Mecatronica',
   },
   {
     img: Logo3,
     title: 'Image',
     author: 'author',
-    tooltip: 'Diseñador de Software',
+    tooltip: 'Vicente Obregón, Desarrollador de Software',
   },
   {
     img: Logo4,

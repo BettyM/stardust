@@ -9,6 +9,7 @@ import GridList from '@material-ui/core/GridList'
 import GridListTile from '@material-ui/core/GridListTile'
 import Tooltip from '@material-ui/core/Tooltip'
 import asesores from './asesores'
+import patrocinadores from './patrocinadores'
 
 const ExpansionPanel = withStyles({
   root: {
@@ -121,11 +122,27 @@ export default class Colaboradores extends Component {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus
-              ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          <Grid item xs={12}>
+            <div className="grid-root">
+              <GridList cellHeight={160} className="grid-list" cols={3}>
+                {patrocinadores.map(tile => (
+                  <GridListTile
+                    key={tile.img}
+                    cols={tile.cols || 1}
+                    className="grid-tile"
+                  >
+                    <Tooltip className="tooltip" title={tile.tooltip}>
+                    <img
+                      src={tile.img}
+                      alt={tile.title}
+                      className="content-image"
+                    />
+                    </Tooltip>
+                  </GridListTile>
+                ))}
+              </GridList>
+            </div>
+          </Grid>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     )
