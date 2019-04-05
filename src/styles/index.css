@@ -13,6 +13,10 @@ code {
   monospace;
 }
 
+#root {
+  background-color: #202744;
+}
+
 .root {
   display: flex;
   flex-wrap: wrap;
@@ -24,24 +28,6 @@ code {
   position: relative;
   height: 70% !important;
   width: 100% !important;
-  /*
-  [theme.breakpoints.down('xs')]: {
-    width: '100% !important', // Overrides inline-style
-    height: 100,
-  },
-  '&:hover, &$focus-visible' {
-    z-index: 1;
-    '& $image-backdrop' {
-      opacity: 0.15;
-    }
-    '& $image-marked' {
-      opacity: 0;
-    }
-    '& $image-title' {
-      border: '4px solid currentColor';
-    }
-  }
-  */
 }
 
 .image:hover {
@@ -177,4 +163,16 @@ code {
 
 .content-root {
   padding: 30px !important;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-media {
+  height: 100%;
+}
+
+.fa {
+  color: #202744;
 }
