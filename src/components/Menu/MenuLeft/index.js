@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Fab from '@material-ui/core/Fab'
 import Grid from '@material-ui/core/Grid'
+import LogoM from '../../../static/images/LogoMercury.png'
 
 const options = [
   {
     id: 'us',
     url: '/static/images/image1.jpg',
     title: "¿Quienes somos?",
-    icon: "fa fa-rocket",
+    icon: LogoM,
     width: '40%',
   },
   {
@@ -58,7 +59,13 @@ export default class MenuLeft extends Component {
             >
               <Grid item xs={2}>
                 <div className="icon">
-                  <i className={item.icon} />
+                  {item.id ==='us'? 
+                    ( <img 
+                        src={item.icon}
+                        alt={item.title}
+                        className="logo-icon"/> ) :
+                    ( <i className={item.icon} /> )
+                  }
                 </div>
               </Grid>
               <Grid item xs={10}>

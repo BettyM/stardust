@@ -170,6 +170,11 @@ code {
   font-size: 25px;
 }
 
+.logo-icon {
+  vertical-align: middle;
+  width: 30px;
+}
+
 .content-root {
   padding: 30px !important;
 }
