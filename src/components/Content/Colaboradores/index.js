@@ -103,7 +103,7 @@ export default class Colaboradores extends Component {
                     cols={tile.cols || 1}
                     className="grid-tile grid-padding"
                   >
-                    <Tooltip title={tile.tooltip} placement="top">
+                    <Tooltip title={tile.tooltip} placement="top" disableTouchListener>
                     <img
                       src={tile.img}
                       alt={tile.title}
@@ -143,7 +143,7 @@ export default class Colaboradores extends Component {
                     cols={tile.cols || 1}
                     className="grid-tile grid-padding"
                   >
-                    <Tooltip title={tile.tooltip} placement="top">
+                    <Tooltip title={tile.tooltip} placement="top" disableTouchListener>
                     <img
                       src={tile.img}
                       alt={tile.title}
