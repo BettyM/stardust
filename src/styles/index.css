@@ -124,8 +124,11 @@ code {
 
 .content-video-rotate {
   transform: rotate(270deg);
-  width: 160vh;
-  height: auto !important;
+  width: 100vh !important;
+  height: 100vw !important;
+  margin-top: -30vw;
+  margin-bottom: -20vw;
+  object-fit: cover;
 }
 
 .grid-root {
