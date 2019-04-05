@@ -77,6 +77,7 @@ const patrocinadores = [
     title: 'Image',
     author: 'author',
     tooltip: 'Fotografía especializada',
+    style: 'content-image-background',
   },
   {
     img: Logo12,

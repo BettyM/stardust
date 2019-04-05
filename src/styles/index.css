@@ -125,6 +125,11 @@ code {
   max-width: 100%;
   height: auto !important;
 }
+.content-image-background {
+  max-width: 100%;
+  height: auto !important;
+  background-color: #000;
+}
 
 .content-video {
   width: 100%;
@@ -142,7 +147,7 @@ code {
   flex-wrap: wrap;
   justify-content: space-around;
   overflow: hidden;
-  background-color: #ffff;
+  background-color: #fff;
 }
 
 .grid-list {
@@ -157,12 +162,12 @@ code {
   height: 100% !important;
 }
 
-.icon {
-  font-size: 25px;
+.grid-padding {
+  padding: 30px !important;
 }
 
-.tooltip {
-  font-size: 14px;
+.icon {
+  font-size: 25px;
 }
 
 .content-root {

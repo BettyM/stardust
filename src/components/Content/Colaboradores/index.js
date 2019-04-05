@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import GridList from '@material-ui/core/GridList'
 import GridListTile from '@material-ui/core/GridListTile'
-import Tooltip from '@material-ui/core/Tooltip'
+import MuiTooltip from '@material-ui/core/Tooltip'
 import asesores from './asesores'
 import patrocinadores from './patrocinadores'
 
@@ -53,6 +53,18 @@ const ExpansionPanelDetails = withStyles(theme => ({
   },
 }))(MuiExpansionPanelDetails)
 
+const Tooltip = withStyles({
+  tooltip: {
+    color: "#E6E6E6",
+    backgroundColor: "#0A1B2A",
+    fontSize: "20px",
+    fontStyle: "italic",
+    fontFamily: "Lucida Sans Unicode",
+    padding: "20px",
+    borderRadius: "24px",
+    textAlign: "center",
+  },
+})(MuiTooltip)
 
 export default class Colaboradores extends Component {
   constructor() {
@@ -89,9 +101,9 @@ export default class Colaboradores extends Component {
                   <GridListTile
                     key={tile.img}
                     cols={tile.cols || 1}
-                    className="grid-tile"
+                    className="grid-tile grid-padding"
                   >
-                    <Tooltip className="tooltip" title={tile.tooltip}>
+                    <Tooltip title={tile.tooltip} placement="top">
                     <img
                       src={tile.img}
                       alt={tile.title}
@@ -129,13 +141,13 @@ export default class Colaboradores extends Component {
                   <GridListTile
                     key={tile.img}
                     cols={tile.cols || 1}
-                    className="grid-tile"
+                    className="grid-tile grid-padding"
                   >
-                    <Tooltip className="tooltip" title={tile.tooltip}>
+                    <Tooltip title={tile.tooltip} placement="top">
                     <img
                       src={tile.img}
                       alt={tile.title}
-                      className="content-image"
+                      className={tile.style || "content-image"}
                     />
                     </Tooltip>
                   </GridListTile>
