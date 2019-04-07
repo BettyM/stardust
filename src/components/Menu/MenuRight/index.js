@@ -7,14 +7,14 @@ const options = [
   {
     id: 'innovation',
     url: '/static/images/image1.jpg',
-    title: "Innovacion en Ingenieria",
+    title: "Innovación en Ingeniería",
     icon: "fa fa-fighter-jet",
     width: '40%',
   },
   {
     id: 'game',
     url: '/static/images/image1.jpg',
-    title: 'Juego de Reaccion',
+    title: 'Juego de Reacción',
     icon: "fa fa-gamepad",
     width: '30%',
   },

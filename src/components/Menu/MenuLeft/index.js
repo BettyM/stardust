@@ -8,7 +8,7 @@ const options = [
   {
     id: 'us',
     url: '/static/images/image1.jpg',
-    title: "¿Quienes somos?",
+    title: "¿Quiénes somos?",
     icon: LogoM,
     width: '40%',
   },

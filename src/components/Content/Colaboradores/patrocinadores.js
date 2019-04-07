@@ -10,6 +10,8 @@ import Logo9 from '../../../static/images/patrocinadores/SONROBOTS.jpg'
 import Logo10 from '../../../static/images/patrocinadores/MALIBU.png'
 import Logo11 from '../../../static/images/patrocinadores/LAVARIEGA.png'
 import Logo12 from '../../../static/images/patrocinadores/SAFA2.png'
+import Logo13 from '../../../static/images/patrocinadores/Renovatio.jpeg'
+import Logo14 from '../../../static/images/patrocinadores/Walcott.jpeg'
 
 const patrocinadores = [
   {
@@ -67,10 +69,22 @@ const patrocinadores = [
     tooltip: 'Venta de piezas electronicas para robotica',
   },
   {
-    img: Logo10,
+    img: Logo13,
     title: 'Image',
     author: 'author',
-    tooltip: 'Espacio recreativo enfocado a F1',
+    tooltip: 'Diseño y Desarrollo de Software',
+  },
+  {
+    img: Logo14,
+    title: 'Image',
+    author: 'author',
+    tooltip: 'Artística con enfoque en Trap',
+  },
+  {
+    img: Logo12,
+    title: 'Image',
+    author: 'author',
+    tooltip: 'Especialistas en luces y sonido',
   },
   {
     img: Logo11,
@@ -80,10 +94,10 @@ const patrocinadores = [
     style: 'content-image-background',
   },
   {
-    img: Logo12,
+    img: Logo10,
     title: 'Image',
     author: 'author',
-    tooltip: 'Especialistas en luces y sonido',
+    tooltip: 'Espacio recreativo enfocado a F1',
   },
 ]
 
