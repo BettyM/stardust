@@ -69,6 +69,13 @@ const data = [
     title: 'Image',
     author: 'author',
   },
+  {},
+  {
+    img: Image11,
+    title: 'Image',
+    author: 'author',
+  },
+  {},
   {
     img: history1,
     title: 'Text',
@@ -90,12 +97,6 @@ const data = [
   {
     img: history4,
     title: 'Text',
-    author: 'author',
-    cols: 3,
-  },
-  {
-    img: Image11,
-    title: 'Image',
     author: 'author',
     cols: 3,
   },

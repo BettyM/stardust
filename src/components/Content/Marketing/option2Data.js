@@ -8,6 +8,7 @@ const option2Data = [
     title: 'Image',
     author: 'author',
     cols: 2,
+    style: 'content-image-transform',
   },
   {
     img: Second,

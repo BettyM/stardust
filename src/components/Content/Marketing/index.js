@@ -133,7 +133,7 @@ export default class Marketing extends Component {
                     <img
                       src={tile.img}
                       alt={tile.title}
-                      className="content-image"
+                      className={tile.style || "content-image"}
                     />
                   </GridListTile>
                 ))}
@@ -265,7 +265,7 @@ export default class Marketing extends Component {
                     <img
                       src={tile.img}
                       alt={tile.title}
-                      className="content-image"
+                      className={tile.style || "content-image"}
                     />
                   </GridListTile>
                 ))}

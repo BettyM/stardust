@@ -122,6 +122,12 @@ code {
   background-color: #000;
 }
 
+.content-image-transform {
+  transform: none !important;
+  left: 0px !important;
+  width: 100% !important;
+}
+
 .content-video {
   width: 100%;
   height: auto !important;
@@ -154,6 +160,7 @@ code {
   float: left;
   overflow: hidden;
   height: 100% !important;
+  text-align: center;
 }
 
 .grid-padding {
