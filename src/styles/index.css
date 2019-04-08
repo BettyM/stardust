@@ -184,3 +184,7 @@ code {
 .fa {
   color: #202744;
 }
+
+.iframe {
+  width: 100% !important;
+}
