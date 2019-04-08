@@ -33,6 +33,7 @@ const options = [
     icon: "fa fa-users",
     width: '30%',
   },
+  /*
   {
     id: 'redes',
     url: '/static/images/image1.jpg',
@@ -40,6 +41,7 @@ const options = [
     icon: "fa fa-comments",
     width: '30%',
   },
+  */
 ]
 
 export default class MenuLeft extends Component {
