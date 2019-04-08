@@ -111,6 +111,11 @@ code {
   max-width: 100%;
   height: auto !important;
 }
+
+.content-image-margin {
+  margin-top: 15vw !important;
+}
+
 .content-image-background {
   max-width: 100%;
   height: auto !important;
