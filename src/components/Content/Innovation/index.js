@@ -16,11 +16,22 @@ export default class Innovation extends Component {
                 cols={tile.cols || 1}
                 className="grid-tile"
               >
+                {tile.title === "Image" &&
                 <img
                   src={tile.img}
                   alt={tile.title}
                   className="content-image"
-                />
+                />}
+                {tile.title === "Video" &&
+                  <video
+                    controls
+                    className="content-video"
+                  >
+                    <source
+                      type="video/mp4"
+                      src={tile.img}
+                    />
+                  </video>}
               </GridListTile>
             ))}
           </GridList>
