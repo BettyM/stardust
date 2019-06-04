@@ -7,11 +7,11 @@ import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails'
 import Typography from '@material-ui/core/Typography'
 import GridList from '@material-ui/core/GridList'
 import GridListTile from '@material-ui/core/GridListTile'
-import option1Data from './option1Data'
-import option2Data from './option2Data'
-import option3Data from './option3Data'
-import option4Data from './option4Data'
-import option5Data from './option5Data'
+import option1Data from './option1'
+import option2Data from './option2'
+import option3Data from './option3'
+import option4Data from './option4'
+import option5Data from './option5'
 
 const ExpansionPanel = withStyles({
   root: {
@@ -79,134 +79,14 @@ export default class Marketing extends Component {
       >
         <ExpansionPanelSummary>
           <Typography className="subtitle-text">
-            Todos nacemos Mercury
+            Carrera verde con Mercury Project
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Grid item xs={12}>
             <div className="grid-root">
-              <GridList cellHeight={160} className="grid-list" cols={3}>
+              <GridList cellHeight={160} className="grid-list" cols={2}>
                 {option1Data.map(tile => (
-                  <GridListTile
-                    key={tile.img}
-                    cols={tile.cols || 1}
-                    className="grid-tile"
-                  >
-                    <img
-                      src={tile.img}
-                      alt={tile.title}
-                      className="content-image"
-                    />
-                  </GridListTile>
-                ))}
-              </GridList>
-            </div>
-          </Grid>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-    )
-  }
-
-  option2 = () => {
-    const { expanded } = this.state
-    return (
-      <ExpansionPanel
-        square
-        expanded={expanded === 'panel2'}
-        onChange={this.handleChange('panel2')}
-      >
-        <ExpansionPanelSummary>
-          <Typography className="subtitle-text">
-            Mercury Race; concluye el cuento.
-          </Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Grid item xs={12}>
-            <div className="grid-root">
-              <GridList cellHeight={160} className="grid-list" cols={2}>
-                {option2Data.map(tile => (
-                  <GridListTile
-                    key={tile.img}
-                    cols={tile.cols || 1}
-                    className="grid-tile"
-                  >
-                    <img
-                      src={tile.img}
-                      alt={tile.title}
-                      className={tile.style || "content-image"}
-                    />
-                  </GridListTile>
-                ))}
-                <GridListTile
-                  key="video"
-                  cols={2}
-                  className="grid-tile"
-                >
-                </GridListTile>
-              </GridList>
-            </div>
-          </Grid>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-    )
-  }
-
-  option3 = () => {
-    const { expanded } = this.state
-    return (
-      <ExpansionPanel
-        square
-        expanded={expanded === 'panel3'}
-        onChange={this.handleChange('panel3')}
-      >
-        <ExpansionPanelSummary>
-          <Typography className="subtitle-text">
-            Difusión de programa STEM-F1 en educación básica.
-          </Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Grid item xs={12}>
-            <div className="grid-root">
-              <GridList cellHeight={160} className="grid-list" cols={2}>
-                {option3Data.map(tile => (
-                  <GridListTile
-                    key={tile.img}
-                    cols={tile.cols || 1}
-                    className="grid-tile"
-                  >
-                    <img
-                      src={tile.img}
-                      alt={tile.title}
-                      className="content-image"
-                    />
-                  </GridListTile>
-                ))}
-              </GridList>
-            </div>
-          </Grid>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-    )
-  }
-
-  option4 = () => {
-    const { expanded } = this.state
-    return (
-      <ExpansionPanel
-        square
-        expanded={expanded === 'panel4'}
-        onChange={this.handleChange('panel4')}
-      >
-        <ExpansionPanelSummary>
-          <Typography className="subtitle-text">
-            Carrera verde con Mercury Project.
-          </Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Grid item xs={12}>
-            <div className="grid-root">
-              <GridList cellHeight={160} className="grid-list" cols={2}>
-                {option4Data.map(tile => (
                   <GridListTile
                     key={tile.img}
                     cols={tile.cols || 1}
@@ -239,6 +119,126 @@ export default class Marketing extends Component {
     )
   }
 
+  option2 = () => {
+    const { expanded } = this.state
+    return (
+      <ExpansionPanel
+        square
+        expanded={expanded === 'panel2'}
+        onChange={this.handleChange('panel2')}
+      >
+        <ExpansionPanelSummary>
+          <Typography className="subtitle-text">
+            Difusión del programa STEM-F1 en educación básica
+          </Typography>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+          <Grid item xs={12}>
+            <div className="grid-root">
+              <GridList cellHeight={160} className="grid-list" cols={2}>
+                {option2Data.map(tile => (
+                  <GridListTile
+                    key={tile.img}
+                    cols={tile.cols || 1}
+                    className="grid-tile"
+                  >
+                    <img
+                      src={tile.img}
+                      alt={tile.title}
+                      className="content-image"
+                    />
+                  </GridListTile>
+                ))}
+              </GridList>
+            </div>
+          </Grid>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
+    )
+  }
+
+  option3 = () => {
+    const { expanded } = this.state
+    return (
+      <ExpansionPanel
+        square
+        expanded={expanded === 'panel3'}
+        onChange={this.handleChange('panel3')}
+      >
+        <ExpansionPanelSummary>
+          <Typography className="subtitle-text">
+            Mercury Race; concluye el cuento
+          </Typography>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+          <Grid item xs={12}>
+            <div className="grid-root">
+              <GridList cellHeight={160} className="grid-list" cols={2}>
+                {option3Data.map(tile => (
+                  <GridListTile
+                    key={tile.img}
+                    cols={tile.cols || 1}
+                    className="grid-tile"
+                  >
+                    <img
+                      src={tile.img}
+                      alt={tile.title}
+                      className={tile.style || "content-image"}
+                    />
+                  </GridListTile>
+                ))}
+                <GridListTile
+                  key="video"
+                  cols={2}
+                  className="grid-tile"
+                >
+                </GridListTile>
+              </GridList>
+            </div>
+          </Grid>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
+    )
+  }
+
+  option4 = () => {
+    const { expanded } = this.state
+    return (
+      <ExpansionPanel
+        square
+        expanded={expanded === 'panel4'}
+        onChange={this.handleChange('panel4')}
+      >
+        <ExpansionPanelSummary>
+          <Typography className="subtitle-text">
+            Todos nacemos Mercury
+          </Typography>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+          <Grid item xs={12}>
+            <div className="grid-root">
+              <GridList cellHeight={160} className="grid-list" cols={3}>
+                {option4Data.map(tile => (
+                  <GridListTile
+                    key={tile.img}
+                    cols={tile.cols || 1}
+                    className="grid-tile"
+                  >
+                    <img
+                      src={tile.img}
+                      alt={tile.title}
+                      className="content-image"
+                    />
+                  </GridListTile>
+                ))}
+              </GridList>
+            </div>
+          </Grid>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
+    )
+  }
+
   option5 = () => {
     const { expanded } = this.state
     return (
@@ -249,7 +249,7 @@ export default class Marketing extends Component {
       >
         <ExpansionPanelSummary>
           <Typography className="subtitle-text">
-            Viviendo f1 con Mercury Project.
+            Viviendo F1 con Mercury Project
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
