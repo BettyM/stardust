@@ -198,3 +198,10 @@ code {
 .iframe {
   width: 100% !important;
 }
+
+.user-form {
+  margin: 20px;
+  text-align: center;
+  border: 1px solid #202744;
+  border-radius: 4px !important;
+}

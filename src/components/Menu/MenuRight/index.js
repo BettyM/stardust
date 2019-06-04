@@ -18,7 +18,6 @@ const options = [
     icon: "fa fa-gamepad",
     width: '30%',
   },
-  /*
   {
     id: 'visitors',
     url: '/static/images/image1.jpg',
@@ -26,7 +25,6 @@ const options = [
     icon: "fa fa-address-card",
     width: '30%',
   },
-  */
   {
     id: 'redes',
     url: '/static/images/image1.jpg',
