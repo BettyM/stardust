@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #202744;
 }
 
 code {
@@ -15,6 +16,7 @@ code {
 
 #root {
   background-color: #202744;
+  padding: 10px;
 }
 
 .root {
@@ -22,6 +24,7 @@ code {
   flex-wrap: wrap;
   min-width: 300;
   width: 100%;
+  height: 100%;
 }
 
 .menu-option {
