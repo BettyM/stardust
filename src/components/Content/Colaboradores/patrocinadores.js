@@ -13,6 +13,7 @@ import Logo12 from '../../../static/images/patrocinadores/SAFA2.png'
 import Logo13 from '../../../static/images/patrocinadores/Renovatio.jpeg'
 import Logo14 from '../../../static/images/patrocinadores/Walcott.jpeg'
 import Logo15 from '../../../static/images/patrocinadores/naranjeros.jpeg'
+import Logo16 from '../../../static/images/patrocinadores/RuelaX.png'
 
 const patrocinadores = [
   {
@@ -106,6 +107,14 @@ const patrocinadores = [
     author: 'author',
     tooltip: 'Espacio recreativo enfocado a F1',
   },
+  {},
+  {
+    img: Logo16,
+    title: 'Image',
+    author: 'author',
+    tooltip: 'Uniformes Deportivos',
+  },
+  {},
 ]
 
 export default patrocinadores
