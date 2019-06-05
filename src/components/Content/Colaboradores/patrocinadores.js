@@ -5,13 +5,14 @@ import Logo4 from '../../../static/images/patrocinadores/ARANDA.png'
 import Logo5 from '../../../static/images/patrocinadores/ith.jpeg'
 import Logo6 from '../../../static/images/patrocinadores/IDEAS3D.png'
 import Logo7 from '../../../static/images/patrocinadores/ganfer.png'
-//import Logo8 from '../../../static/images/patrocinadores/SonoraWS.png'
+import Logo8 from '../../../static/images/patrocinadores/NUBARY.jpg'
 import Logo9 from '../../../static/images/patrocinadores/SONROBOTS.jpg'
 import Logo10 from '../../../static/images/patrocinadores/MALIBU.png'
 import Logo11 from '../../../static/images/patrocinadores/LAVARIEGA.png'
 import Logo12 from '../../../static/images/patrocinadores/SAFA2.png'
 import Logo13 from '../../../static/images/patrocinadores/Renovatio.jpeg'
 import Logo14 from '../../../static/images/patrocinadores/Walcott.jpeg'
+import Logo15 from '../../../static/images/patrocinadores/naranjeros.jpeg'
 
 const patrocinadores = [
   {
@@ -39,10 +40,10 @@ const patrocinadores = [
     tooltip: 'Electrica Especializada',
   },
   {
-    img: Logo5,
+    img: Logo8,
     title: 'Image',
     author: 'author',
-    tooltip: 'Instituto Tecnológico de Hermosillo; Laboratorio de Ingeniería en Mecánica; Maquilado en CNC',
+    tooltip: 'Expertos en Servicios Logísticos a nivel internacional',
   },
   {
     img: Logo6,
@@ -56,14 +57,18 @@ const patrocinadores = [
     author: 'author',
     tooltip: 'Fundación comprometida con el bienestar social',
   },
-  /*
   {
-    img: Logo8,
+    img: Logo5,
     title: 'Image',
     author: 'author',
-    tooltip: 'Autodetalle',
+    tooltip: 'Instituto Tecnológico de Hermosillo; Laboratorio de Ingeniería en Mecánica; Maquilado en CNC',
   },
-  */
+  {
+    img: Logo15,
+    title: 'Image',
+    author: 'author',
+    tooltip: 'Club de Beisbol Naranjeros de Hermosillo',
+  },
   {
     img: Logo9,
     title: 'Image',
