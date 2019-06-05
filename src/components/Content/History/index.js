@@ -17,6 +17,16 @@ export default class History extends Component {
                 cols={tile.cols || 1}
                 className="grid-tile"
               >
+                {tile.title === "Video" &&
+                  <video
+                    controls
+                    className="content-video"
+                  >
+                    <source
+                      type="video/mp4"
+                      src={tile.img}
+                    />
+                  </video>}
                 {tile.title === "Image" &&
                 <img
                   src={tile.img}
