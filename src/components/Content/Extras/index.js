@@ -32,7 +32,7 @@ export default class Extras extends Component {
                 {tile.title === "Text" &&
                   <Typography
                     component="span"
-                    align="justify"
+                    align="center"
                     variant="h6"
                     className={tile.style || "phrase"}
                   >
