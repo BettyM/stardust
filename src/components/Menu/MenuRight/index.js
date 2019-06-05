@@ -19,17 +19,17 @@ const options = [
     width: '30%',
   },
   {
-    id: 'visitors',
-    url: '/static/images/image1.jpg',
-    title: 'Visitantes',
-    icon: "fa fa-address-card",
-    width: '30%',
-  },
-  {
     id: 'redes',
     url: '/static/images/image1.jpg',
     title: 'Redes Sociales',
     icon: "fa fa-comments",
+    width: '30%',
+  },
+  {
+    id: 'visitors',
+    url: '/static/images/image1.jpg',
+    title: '¿A ti qué te inspira?',
+    icon: "fa fa-address-card",
     width: '30%',
   },
   {

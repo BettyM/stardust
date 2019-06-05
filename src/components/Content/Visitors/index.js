@@ -58,6 +58,7 @@ export default class Visitors extends Component {
       <Card className="user-form">
       <CardContent>
       <Grid container spacing={24} alignItems="center" justify="center">
+        <h1>Inspiración que impulsa</h1>
         <Grid item xs={12}>
           <TextField
               id="user-name"
@@ -74,7 +75,7 @@ export default class Visitors extends Component {
           <TextField
               id="user-comment"
               name="comment"
-              label="Comentario"
+              label="Comentario, Que te inspira?"
               margin="normal"
               variant="outlined"
               InputLabelProps={{ shrink: true }}
