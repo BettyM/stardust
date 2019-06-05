@@ -149,6 +149,16 @@ code {
   object-fit: cover;
 }
 
+.phrase {
+  font-style: italic;
+  margin: 15px;
+}
+
+.phrase-right {
+  float: right;
+  margin: 15px;
+}
+
 .grid-root {
   display: flex;
   flex-wrap: wrap;
