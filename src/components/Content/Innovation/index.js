@@ -20,7 +20,7 @@ export default class Innovation extends Component {
                 <img
                   src={tile.img}
                   alt={tile.title}
-                  className="content-image"
+                  className={tile.style || "content-image"}
                 />}
                 {tile.title === "Video" &&
                   <video

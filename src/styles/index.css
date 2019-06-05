@@ -99,6 +99,10 @@ code {
   opacity: 0;
 }
 
+.image-bottom {
+  height: 100% !important;
+}
+
 .menu-item {
   height: 150px;
   line-height: 150px;
