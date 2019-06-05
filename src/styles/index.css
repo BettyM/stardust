@@ -119,6 +119,12 @@ code {
   height: auto !important;
 }
 
+.content-image-border {
+  max-width: 100%;
+  height: auto !important;
+  border-top: 1px solid #202744;
+}
+
 .content-image-margin {
   margin-top: 15vw !important;
 }

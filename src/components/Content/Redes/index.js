@@ -93,7 +93,7 @@ export default class Redes extends Component {
                     <img
                       src={tile.img}
                       alt={tile.title}
-                      className="content-image"
+                      className={tile.style || "content-image"}
                     />
                   </GridListTile>
                 ))}
@@ -121,7 +121,7 @@ export default class Redes extends Component {
         <ExpansionPanelDetails>
           <Grid item xs={12}>
             <div className="grid-root">
-              <GridList cellHeight={160} className="grid-list" cols={3}>
+              <GridList cellHeight={160} className="grid-list" cols={2}>
                 {instagram.map(tile => (
                   <GridListTile
                     key={tile.img}
@@ -131,7 +131,7 @@ export default class Redes extends Component {
                     <img
                       src={tile.img}
                       alt={tile.title}
-                      className="content-image"
+                      className={tile.style || "content-image"}
                     />
                   </GridListTile>
                 ))}
@@ -175,7 +175,7 @@ export default class Redes extends Component {
                     <img
                       src={tile.img}
                       alt={tile.title}
-                      className="content-image"
+                      className={tile.style || "content-image"}
                     />
                   </GridListTile>
                 ))}
