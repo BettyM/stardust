@@ -1,11 +1,11 @@
 import Logo1 from '../../../static/images/patrocinadores/MDF.png'
-import Logo2 from '../../../static/images/patrocinadores/SOGO.png'
+import Logo2 from '../../../static/images/patrocinadores/gobson.png'
 import Logo3 from '../../../static/images/patrocinadores/GURROLA.png'
 import Logo4 from '../../../static/images/patrocinadores/ARANDA.png'
-import Logo5 from '../../../static/images/patrocinadores/ABEC357.png'
+import Logo5 from '../../../static/images/patrocinadores/ith.jpeg'
 import Logo6 from '../../../static/images/patrocinadores/IDEAS3D.png'
-import Logo7 from '../../../static/images/patrocinadores/DisePrint.png'
-import Logo8 from '../../../static/images/patrocinadores/SonoraWS.png'
+import Logo7 from '../../../static/images/patrocinadores/ganfer.png'
+//import Logo8 from '../../../static/images/patrocinadores/SonoraWS.png'
 import Logo9 from '../../../static/images/patrocinadores/SONROBOTS.jpg'
 import Logo10 from '../../../static/images/patrocinadores/MALIBU.png'
 import Logo11 from '../../../static/images/patrocinadores/LAVARIEGA.png'
@@ -24,7 +24,7 @@ const patrocinadores = [
     img: Logo2,
     title: 'Image',
     author: 'author',
-    tooltip: 'Manufactura Industrial',
+    tooltip: 'Gobierno del Estado de Sonora',
   },
   {
     img: Logo3,
@@ -42,7 +42,7 @@ const patrocinadores = [
     img: Logo5,
     title: 'Image',
     author: 'author',
-    tooltip: 'Ejes y productos para competencia',
+    tooltip: 'Instituto Tecnológico de Hermosillo; Laboratorio de Ingeniería en Mecánica; Maquilado en CNC',
   },
   {
     img: Logo6,
@@ -54,14 +54,16 @@ const patrocinadores = [
     img: Logo7,
     title: 'Image',
     author: 'author',
-    tooltip: 'Impresiones y Uniformes',
+    tooltip: 'Fundación comprometida con el bienestar social',
   },
+  /*
   {
     img: Logo8,
     title: 'Image',
     author: 'author',
     tooltip: 'Autodetalle',
   },
+  */
   {
     img: Logo9,
     title: 'Image',
