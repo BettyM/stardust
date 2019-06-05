@@ -70,10 +70,10 @@ const patrocinadores = [
     tooltip: 'Club de Beisbol Naranjeros de Hermosillo',
   },
   {
-    img: Logo9,
+    img: Logo12,
     title: 'Image',
     author: 'author',
-    tooltip: 'Venta de piezas electronicas para robotica',
+    tooltip: 'Especialistas en luces y sonido',
   },
   {
     img: Logo13,
@@ -88,10 +88,10 @@ const patrocinadores = [
     tooltip: 'Artística con enfoque en Trap',
   },
   {
-    img: Logo12,
+    img: Logo9,
     title: 'Image',
     author: 'author',
-    tooltip: 'Especialistas en luces y sonido',
+    tooltip: 'Venta de piezas electronicas para robotica',
   },
   {
     img: Logo11,
