@@ -1,8 +1,9 @@
 import Image1 from '../../../static/images/ingenieria/elotitoflow.png'
-//import Image2 from '../../../static/images/ingenieria/elotitoflow2.png'
-//import Image3 from '../../../static/images/ingenieria/elotitoflow3.png'
-import Image4 from '../../../static/images/ingenieria/cnc1.jpg'
-//import Image5 from '../../../static/images/ingenieria/cnc2.jpg'
+import Image2 from '../../../static/images/ingenieria/alerondelantero.png'
+import Image3 from '../../../static/images/ingenieria/alerontrasero.png'
+import Image4 from '../../../static/images/ingenieria/tangoflow1.png'
+import Image5 from '../../../static/images/ingenieria/tangoflow2.png'
+import Image6 from '../../../static/images/ingenieria/cnc1.jpg'
 import Video from '../../../static/videos/ingenieria1.mp4'
 
 const data = [
@@ -12,7 +13,6 @@ const data = [
     author: 'author',
     cols: 2,
   },
-  /*
   {
     img: Image2,
     title: 'Image',
@@ -25,22 +25,25 @@ const data = [
     author: 'author',
     cols: 2,
   },
-  */
   {
     img: Image4,
     title: 'Image',
     author: 'author',
     cols: 2,
   },
-  /*
   {
     img: Image5,
+    title: 'Image',
+    author: 'author',
+    cols: 2,
+  },
+  {
+    img: Image6,
     title: 'Image',
     author: 'author',
     style: 'image-bottom',
     cols: 2,
   },
-  */
   {
     img: Video,
     title: 'Video',
