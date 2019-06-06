@@ -53,7 +53,6 @@ const facebook = [
     img: Image7,
     title: 'Image',
     author: 'author',
-    style: 'content-image-border',
     cols: 2,
   },
   {
@@ -81,7 +80,6 @@ const facebook = [
     img: Image10,
     title: 'Image',
     author: 'author',
-    style: 'content-image-border',
     cols: 2,
   },
 ]

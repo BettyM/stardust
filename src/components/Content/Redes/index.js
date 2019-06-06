@@ -93,7 +93,7 @@ export default class Redes extends Component {
                     <img
                       src={tile.img}
                       alt={tile.title}
-                      className={tile.style || "content-image-transform"}
+                      className="content-image-transform"
                     />
                   </GridListTile>
                 ))}
