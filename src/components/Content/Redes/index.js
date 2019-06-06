@@ -93,7 +93,7 @@ export default class Redes extends Component {
                     <img
                       src={tile.img}
                       alt={tile.title}
-                      className={tile.style || "content-image"}
+                      className={tile.style || "content-image-transform"}
                     />
                   </GridListTile>
                 ))}
@@ -131,7 +131,7 @@ export default class Redes extends Component {
                     <img
                       src={tile.img}
                       alt={tile.title}
-                      className={tile.style || "content-image"}
+                      className={tile.style || "content-image-transform"}
                     />
                   </GridListTile>
                 ))}
@@ -175,7 +175,7 @@ export default class Redes extends Component {
                     <img
                       src={tile.img}
                       alt={tile.title}
-                      className={tile.style || "content-image"}
+                      className={tile.style || "content-image-transform"}
                     />
                   </GridListTile>
                 ))}

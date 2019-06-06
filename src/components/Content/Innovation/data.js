@@ -41,7 +41,7 @@ const data = [
     img: Image6,
     title: 'Image',
     author: 'author',
-    style: 'image-bottom',
+    style: 'content-image-transform',
     cols: 2,
   },
   {
